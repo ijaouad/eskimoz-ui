@@ -12,7 +12,7 @@
 
 
 .button:disabled {
-    background-color: var(--light);;
-    color: var(--greyscale-3);
+    background-color: var(--light) !important;
+    color: var(--greyscale-3) !important;
     border: none;
 }
