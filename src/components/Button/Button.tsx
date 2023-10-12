@@ -21,7 +21,7 @@ export const Button = ({ children, variant = 'primary', size, icon, dropdown, di
     return (
         <button {...props} className={`button button-${variant} button-${size}`} disabled={disabled}>
 
-            { icon ?
+            { dropdown ?
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 0.642822C6.5 0.36668 6.27614 0.142822 6 0.142822C5.72386 0.142822 5.5 0.36668 5.5 0.642822V5.5H0.643066C0.366924 5.5 0.143066 5.72386 0.143066 6C0.143066 6.27614 0.366924 6.5 0.643066 6.5H5.5V11.3571C5.5 11.6333 5.72386 11.8571 6 11.8571C6.27614 11.8571 6.5 11.6333 6.5 11.3571V6.5H11.3574C11.6335 6.5 11.8574 6.27614 11.8574 6C11.8574 5.72386 11.6335 5.5 11.3574 5.5H6.5V0.642822Z" fill="currentColor"/>
                 </svg>

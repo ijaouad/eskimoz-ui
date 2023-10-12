@@ -7,6 +7,32 @@ a {
     text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
+}
+
+
+:root {
+    --primary: #2F80ED;
+    --primary-dark: #05153D;
+
+    --blue: #5A88FF;
+    --bark-blue: #0E44A8;
+    --light-blue: #D1E1FF;
+
+    --red: #FF5A5A;
+    --dark-red: #CD1F1F;
+    --light-red: #FFE1E1;
+
+    --dark: #1C1D1E;
+    --greyscale-2: #3B4D6F;
+    --greyscale-3: #919AAB;
+    --greyscale-4: #DADADA;
+    --greyscale-5: #F3F4F5;
+    --greyscale-6: #E7EAEE;
+    --light: #F7F9FC;
+    --white: #FFF;
+
+
 }

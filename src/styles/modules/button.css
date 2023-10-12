@@ -1,26 +1,29 @@
+@import '../base/index.css';
+
+
 .button {
     font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    color: white;
+    color: var(--light);
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
 .button-primary {
-    background-color: #2F80ED;
+    background-color: var(--primary);
 }
 
 .button-secondary {
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #5e5e5e;
+    color: var(--dark);
+    background-color: var(--light);
+    border: 1px solid var(--greyscale-4);
 }
 
 .button-danger {
-    background-color: #FF5A5A;
+    background-color: var(--red);
     font-weight: bold ;
 }
 
