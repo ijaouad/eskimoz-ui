@@ -1,0 +1,18 @@
+@import '../base/index.css';
+
+.button:hover {
+    background-color: #0E44A8;
+    color: #fff;
+}
+
+
+.button-danger:hover {
+    background-color: #CD1F1F;
+}
+
+
+.button:disabled {
+    background-color: #F7F9FC;
+    color: #919AAB;
+    border: none;
+}
