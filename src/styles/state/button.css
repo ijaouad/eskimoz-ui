@@ -1,7 +1,7 @@
 @import '../base/index.css';
 
 .button:hover {
-    background-color: var(--primary-dark);
+    background-color: var(--blue-bark) !important;
     color: var(--white);;
 }
 
