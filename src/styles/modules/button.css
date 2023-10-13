@@ -2,7 +2,6 @@
 
 
 .button {
-    font-weight: 700;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -11,6 +10,7 @@
     align-items: center;
     gap: 6px;
     font-size: 13px;
+    padding: 10px 16px;
 }
 
 .button-primary {
@@ -30,9 +30,5 @@
 
 .button-large {
     padding: 15px 16px;
-}
-
-.button-small {
-    padding: 10px 16px;
-    font-weight: normal;
+    font-weight: bold ;
 }
