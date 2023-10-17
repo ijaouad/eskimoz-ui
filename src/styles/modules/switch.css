@@ -1,0 +1,59 @@
+@import './../base/index.css';
+
+
+
+.switch-toggle {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.switch-toggle input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.switch-toggle input:checked~.switch-control {
+    background-color: var(--blue);
+}
+
+.switch-toggle input:checked~.switch-control:after {
+    left: 16px;
+}
+
+.switch-toggle .switch-control {
+    position: absolute;
+
+    
+    
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 31.5px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: var(--gray);
+    transition: background-color 0.15s ease-in;
+
+}
+
+.switch-toggle .switch-control:after {
+    content: "";
+    position: absolute;
+
+    left: 2px;
+    box-shadow: 0px 1px 4px -1px rgba(120,120,120,0.56);
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 13.5px;
+    height: 13.5px;
+    border-radius: 1.563rem;
+    background: white;
+    transition: left 0.15s ease-in;
+}

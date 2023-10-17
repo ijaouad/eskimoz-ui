@@ -1,18 +1,51 @@
 @import '../base/index.css';
 
+/*********** HOVERS ************/
+
 .button:hover {
-    background-color: var(--blue-bark) !important;
+    background-color: var(--blue-bark);
     color: var(--white);;
 }
 
 
 .button-danger:hover {
-    background-color: var(--dark-red);
+    background-color: var(--red-dark);
 }
 
 
+.button-icon:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+
+.button-link:hover {
+    color: var(--red-dark);
+    background-color: transparent;
+}
+
+
+/*********** DISABLED ************/
+
 .button:disabled {
-    background-color: var(--light) !important;
-    color: var(--greyscale-3) !important;
+    background-color: var(--light);
+    color: var(--gray-dark);
     border: none;
+    cursor: not-allowed;
+}
+
+.button-icon:disabled {
+    border: 1px solid var(--gray);
+}
+
+.button-link:disabled {
+    color: var(--gray-dark);
+    background-color: transparent;
+}
+
+
+/*********** ACTIVE ************/
+
+.button:active:not(:disabled) {
+    opacity: .6;
 }

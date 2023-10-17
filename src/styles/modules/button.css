@@ -8,19 +8,24 @@
     color: var(--light);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     font-size: 13px;
     padding: 10px 16px;
 }
 
 .button-primary {
-    background-color: var(--primary) !important;
+    background-color: var(--primary);
 }
 
-.button-secondary {
+.button-secondary, .button-icon {
     color: var(--dark);
-    background-color: var(--light);
-    border: 1px solid var(--greyscale-4);
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+}
+
+.button-icon {
+    padding: 10px;
 }
 
 .button-danger {
@@ -28,7 +33,17 @@
     font-weight: bold ;
 }
 
+.button-link {
+    background-color: transparent;
+    color: var(--red);
+    padding: 0;
+}
+
 .button-large {
     padding: 15px 16px;
     font-weight: bold ;
+}
+
+.width-full {
+    width: 100%;
 }
