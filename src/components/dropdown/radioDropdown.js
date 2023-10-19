@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Radio, Space } from 'antd'
-import Text from "../text/text";
+
+import { ButtonDropdown } from "./../button/button";
 
 import './../../styles/modules/radio-dropdown.css'
 
@@ -18,7 +19,10 @@ const RadioDropdown = props => {
         { name: 'Option 4', value: 'option-4' },
         { name: 'Option 5', value: 'option-5' },
     ]
+    
+    const title = 'Open options'
 
+    
     const onChange = (e) => {
         // alert('radio checked ....' + e.target.value + '\n' + e.target.value === value);
         setValue(e.target.value);
@@ -27,10 +31,7 @@ const RadioDropdown = props => {
     return (
         <div className="radio-dropdown-container">
             <div className=''>
-                <button className='radio-dropdown-button' onClick={() => setShowDropdown(!showDropdown)}>
-                    <Text variant={'paragraph-small'}>Title</Text>
-                    <Icon />
-                </button>
+                <ButtonDropdown text={title} onClick={() => setShowDropdown(!showDropdown)}/>
             </div>
            { showDropdown && <div className="radio-dropdown">
                 <div className='radio-dropdown-options'>
@@ -55,10 +56,3 @@ export default RadioDropdown
 
 
 
-function Icon(props) {
-    return (
-        <svg {...props} xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-            <path d="M7.28572 2.50021L3.89286 5.89307L0.5 2.50021" stroke="#1C1D1E" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-    )
-}

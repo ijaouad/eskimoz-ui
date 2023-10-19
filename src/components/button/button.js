@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import PropTypes from 'prop-types';
+import Text from "../text/text";
 
 import './../../styles/modules/button.css'
 import './../../styles/state/button.css'
@@ -50,3 +51,37 @@ Button.propTypes = {
 };
 
 export default Button
+
+
+
+
+/**
+ * DEFAULT
+ * The primary button
+ *
+ * @param  {string}    text        - text
+*/
+const ButtonDropdown = ({ text, ...props }) => {
+    return (
+        <button {...props} className='dropdown-button'>
+            <Text variant={'paragraph-small'}>{text}</Text>
+            <Icon />
+        </button>
+    )
+}
+ButtonDropdown.propTypes = {
+    text: PropTypes.string.isRequired,
+};
+
+export { ButtonDropdown }
+
+
+
+
+function Icon(props) {
+    return (
+        <svg {...props} xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+            <path d="M7.28572 2.50021L3.89286 5.89307L0.5 2.50021" stroke="#1C1D1E" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    )
+}
