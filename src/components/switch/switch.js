@@ -1,20 +1,27 @@
 import React from 'react'
 import { Switch as AntSwitch } from 'antd'
+import PropTypes from 'prop-types'
 
 import './../../styles/modules/switch.css'
 
+
+/**
+ * @param  props  - Initialy extands checkbox attributes
+*/
 const Switch = ({ ...props }) => {
   return (
     <>
-      {/* //custom switch
       <label className="switch-toggle">
-        <input type="checkbox" />
+        <input type="checkbox" {...props}/>
         <span className="switch-control"></span>
-      </label> */}
-      <AntSwitch />
+      </label>
+      {/* <AntSwitch /> */}
     </>
   )
 }
 
+Switch.propTypes = {
+  checked: PropTypes.bool.isRequired,
+};
 
 export default Switch

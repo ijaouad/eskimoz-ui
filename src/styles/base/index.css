@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  outline: none;
+  border: none;
+  background: none;
 }
 
 a {
@@ -21,6 +24,11 @@ ol {
 }
 
 :root {
+    --button-corner-radius: 9px;
+
+
+
+
     --primary: #2F80ED;
     --primary-dark: #05153D;
 

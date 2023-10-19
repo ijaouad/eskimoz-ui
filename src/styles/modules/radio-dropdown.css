@@ -1,0 +1,22 @@
+@import './../base/index.css';
+
+
+.radio-dropdown {
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-radio-item {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+
+.dropdown-radio-item:hover {
+    background-color: var(--light);
+}
+
+.dropdown-radio-item.checked{
+    color: var(--primary) !important;
+}

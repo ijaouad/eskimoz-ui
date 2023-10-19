@@ -2,9 +2,12 @@
 
 /*********** HOVERS ************/
 
-.button:hover {
+.button-primary:hover {
     background-color: var(--blue-bark);
-    color: var(--white);;
+}
+
+.button-secondary:hover {
+    background-color: var(--gray-light);
 }
 
 
@@ -44,8 +47,3 @@
 }
 
 
-/*********** ACTIVE ************/
-
-.button:active:not(:disabled) {
-    opacity: .6;
-}

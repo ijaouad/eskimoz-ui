@@ -5,14 +5,6 @@ import Button from '../components/button/button';
 const meta = {
     title: 'Button',
     component: Button,
-    argTypes: {
-        variant: {
-            defaultValue: 'primary'
-        },
-        size: {
-            defaultValue: 'large'
-        }
-    }
 }
 
 export default meta
@@ -20,20 +12,20 @@ export default meta
 
 export const Primary = (args) => <Button {...args} />;
 Primary.args = {
-    children: 'Primary',
+    text: 'Primary',
     icon: <Plus />
 };
 
 export const Secondary = (args) => <Button {...args} />;
 Secondary.args = {
-    children: 'Secondary',
+    text: 'Secondary',
     variant: 'secondary',
     icon: <Plus />
 };
 
 export const Danger = (args) => <Button {...args} />;
 Danger.args = {
-    children: 'Danger',
+    text: 'Danger',
     variant: 'danger',
     icon: <Plus />,
 
@@ -47,7 +39,7 @@ Icon.args = {
 
 export const Link = (args) => <Button {...args} />;
 Link.args = {
-    children: 'Supprimer',
+    text: 'Supprimer',
     variant: 'link',
     icon: <Delete />
 };
@@ -57,8 +49,8 @@ Link.args = {
 function Plus() {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M7 2.23804V11.7618" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M11.7621 7H2.23828" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 2.23804V11.7618" stroke="currentColor" stroke-width="1.2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M11.7621 7H2.23828" stroke="currentColor" stroke-width="1.2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     )
 }

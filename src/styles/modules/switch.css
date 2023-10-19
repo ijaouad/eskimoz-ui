@@ -1,9 +1,10 @@
 @import './../base/index.css';
 
 
-
 .switch-toggle {
     display: block;
+    min-width: 32px;
+    min-height: 18px;    
     position: relative;
     cursor: pointer;
     user-select: none;
@@ -26,13 +27,9 @@
 }
 
 .switch-toggle .switch-control {
-    position: absolute;
-
-    
-    
-    top: 50%;
-    transform: translateY(-50%);
-    
+    position: absolute; 
+    top: 0;
+    left: 0;    
     width: 31.5px;
     height: 18px;
     border-radius: 50px;
@@ -41,16 +38,13 @@
 
 }
 
-.switch-toggle .switch-control:after {
+.switch-toggle .switch-control::after {
     content: "";
     position: absolute;
-
     left: 2px;
     box-shadow: 0px 1px 4px -1px rgba(120,120,120,0.56);
-
     top: 50%;
     transform: translateY(-50%);
-
     width: 13.5px;
     height: 13.5px;
     border-radius: 1.563rem;
