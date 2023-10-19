@@ -60,6 +60,7 @@ export default Button
  * The primary button
  *
  * @param  {string}    text        - text
+ * @param  prop    extande all button attributes
 */
 const ButtonDropdown = ({ text, ...props }) => {
     return (
