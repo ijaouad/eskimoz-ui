@@ -4,7 +4,7 @@
 .text {
     line-height: 130%;
     font-weight: 600;
-    color: var(--primary-dark);
+    color: inherit;
     font-family: 'Inter', sans-serif;
 }
 
